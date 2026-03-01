@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Form Validation</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="form-box p-5">
+
+        <h2 class="text-center mb-4 fw-bold">Create Account</h2>
+
+        <form id="myForm" novalidate>
+
+            <!-- Full Name -->
+            <div class="mb-3">
+                <input type="text" class="form-control custom-input" id="fullName" placeholder="Full Name">
+                <small class="error-text" id="nameError"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <input type="text" class="form-control custom-input" id="email" placeholder="Email ID">
+                <small class="error-text" id="emailError"></small>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+                <input type="text" class="form-control custom-input" id="phone" placeholder="Phone Number">
+                <small class="error-text" id="phoneError"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <input type="password" class="form-control custom-input" id="password" placeholder="Password">
+                <small class="error-text" id="passwordError"></small>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-4">
+                <input type="password" class="form-control custom-input" id="confirmPassword" placeholder="Confirm Password">
+                <small class="error-text" id="confirmPasswordError"></small>
+            </div>
+
+            <button type="submit" class="btn custom-btn w-100 fw-bold">REGISTER</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
